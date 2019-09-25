@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<!-- code by webdevtrick (https://webdevtrick.com) -->
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Quiz</title>
+<head>
     <link rel="stylesheet" type="text/css" href="style.css">
+<title>JavaScript Quiz</title>
+
 </head>
 <body>
-    <div class="grid">
-        <div id="quiz">
-            <h1>The Quiz</h1>
-            <hr style="margin-bottom: 20px">
- 
-            <p id="question"></p>
- 
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
-            </div>
- 
-            <hr style="margin-top: 50px">
-            <footer>
-                <p id="progress">Question x of y</p>
-            </footer>
-        </div>
-    </div>
- 
- 
-<script src="quiz.js"></script>
- 
-</body>
+    <div id="main"><!-- open main div -->
+    <div id="header"><!-- open header div -->
+    <h1>You should know this... 15 seconds is ticking!</h1>
+    </div><!-- close header div -->
+    Time : <span id="timer"></span>
+    <form id="form1">
+
+        <h2>Which is the best description of a variable?</h2>
+        <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Identifies a portion of a string.</label><br>
+        <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />A method to join strings.</label><br>
+        <label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Allows you to store information so it can be reused throughout the program</label><br>
+        <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Allows you to make a decision based on a condition.</label><br>
+        
+        <h2>Which is the best description of the substring method?</h2>
+        <label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Identifies a portion of a string.</label><br>
+        <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>A method to join strings.</label><br>
+        <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Allows you to store information so it can be reused throughout the program</label><br>
+        <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Allows you to make a decision based on a condition.</label><br>
+        
+        <h2>Which is the best description of concatenation?</h2>
+        <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Identifies a portion of a string.</label><br>
+        <label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />A method to join strings.</label><br>
+        <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Allows you to store information so it can be reused throughout the program</label><br>
+        <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Allows you to make a decision based on a condition.</label><br>
+        
+        <h2>Which is the best description of an if statement?</h2>
+        <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Identifies a portion of a string.</label><br>
+        <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />A method to join strings.</label><br>
+        <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Allows you to store information so it can be reused throughout the program</label><br>
+        <label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />Allows you to make a decision based on a condition.</label><br>
+        
+        <button type="submit" value="Submit">Submit</button>
+        
+        </form>
+        <p>Your grade is: <span id="grade">__</span></p>
+        <p id="grade2"></p>
+        
+        <script src="quiz.js"></script>    
+    </div><!-- close main div -->
+    
+    </body>
+    
+    
+    
+    
 </html>
