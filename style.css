@@ -1,0 +1,37 @@
+<style>
+body {
+background-color: #999;
+font-family: "Arial, Helvetica", sans-serif;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: powderblue;
+border-radius: 10px;
+}
+
+#header {
+font-family: "Arial, Helvetica", sans-serif;
+font-size: 150%;
+color: black;
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: blue;
+background-image: url("https://loremflickr.com/g/320/240/paris,girl/all");
+color: white;
+}
+#form1{
+    font-family: "Arial, Helvetica", sans-serif;
+}
+#timer{
+    font-family: "Arial, Helvetica", sans-serif;
+    font-size: 150%; 
+}
+</style>
+
