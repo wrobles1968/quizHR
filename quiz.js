@@ -1,5 +1,5 @@
-var sec = 15;
-var time = setInterval(myTimer, 1000);
+let sec = 15;
+let time = setInterval(myTimer, 1000);
 
 function myTimer() {
     document.getElementById('timer').innerHTML = sec + "sec left";
